@@ -18,11 +18,11 @@
 
 __mod_name__ = "Music Player"
 __help__ = """
-          <b>》** DAISYXMUSIC v2 ** 《</b>
+          <b>》** 💿PATRICIA VCPLAYER💿 ** 《</b>
             
  DAISYXMUSIC plays plays music in your group's voice chat
  
- Assistant name >> @DaisyXhelper
+ Assistant name >> @patriciaXmusic
  
 <b> Setting up </b>
 
@@ -53,7 +53,7 @@ __help__ = """
 =>> More tools 🧑‍🔧
 
   /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-  /userbotjoin: Invite @DaisyXhelper Userbot to your chat
+  /userbotjoin: Invite @patriciaXmusic Userbot to your chat
 
 *Player cmd and all other cmds except /play, /current  and /playlist  are only for admins with manage group
 
