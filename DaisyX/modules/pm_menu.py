@@ -45,16 +45,16 @@ def help_markup(modules):
 
 
 STICKERS = (
-    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ",
-    "CAACAgUAAxkBAAJOG2BeljABwlCfwzHT1gzyiciBri6_AAIsAgACXBPBVgpGQRz-1qmlHgQ",
-    "CAACAgUAAxkBAAJOHGBeljOJ35CQNnkpnVcgRoHuJX6DAAL3AQACN8TBVm1PIART01cWHgQ",
-    "CAACAgUAAxkBAAJOHWBeljXW9QzYQ51gpCjHZHCF5Ui6AAJ7AgAC3zDBVo2xenp7JYhAHgQ",
-    "CAACAgUAAxkBAAJOHmBeljjU0_FT_QpdUUJBqVUC0nfJAAKYAgACJ_jBVvntHY_8WF27HgQ",
-    "CAACAgUAAxkBAAJOH2BeljrV68mPLu8_6n4edT20Q3IQAAJ9AgACq3LBVmLuZuNPlvkfHgQ",
-    "CAACAgUAAxkBAAJOIGBeljttuniUPykRtzkSZj3SRwKJAAI7AgACNm_BVp8TCkE6ZqCoHgQ",
-    "CAACAgUAAxkBAAJOIWBelj-P_2vtVqtkF2OMlVN3M0N4AAK3AQACSm3BVkXF2voraS2tHgQ",
-    "CAACAgUAAxkBAAJOImBelkJxUBm2rL1iPfMZfk-_9DaOAALrAgAC4T3BVniopXQVsZ4KHgQ",
-    "CAACAgUAAxkBAAJOI2BelkMO0AX_wtAc7hUZz1NixuMlAAKEAwACY4TAViVuNLTBmmkgHgQ",
+    "CAADBQADmgIAArTp6VWnYEbokD9diwI",
+    "CAADBQAD9AIAAtRG6FVLMaqffZ8JPAI",
+    "CAADBQADWgIAAjGI6VWyhb3gtNugFgI",
+    "CAADBQADGwMAAquA6FXKEc5iknUkOQI",
+    "CAADBQADmwEAArPH6FV7-IFE84rftAI",
+    "CAADBQADdwIAAkiH6VVget6tCC3jjwI",
+    "CAADBQAD_QEAAugl6FV7_th3PdNcUQI",
+    "CAADBQADmAIAArEq4VVlUgsaP8v78QI",
+    "CAADBQADoQIAAuQD6VUUNOpTsyvJgAI",
+    "CAADBQADHgIAAnjd6VWt9Zhq019-3gI",
 )
 
 
@@ -77,9 +77,9 @@ async def get_start_func(message, strings, edit=False):
 
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
-    buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
+    buttons.add(InlineKeyboardButton(strings["HELP"], callback_data="get_help"))
     buttons.add(
-        InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
+        InlineKeyboardButton(strings["LANGUAGE"], callback_data="lang_btn"),
         InlineKeyboardButton(
             strings["MUSIC GROUP"], url="https://github.com/TeamDaisyX/"
         ),
